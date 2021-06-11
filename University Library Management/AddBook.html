@@ -1,0 +1,18 @@
+<script src="Script.js"></script>
+    
+<form name="form" action="BookServer.php" method="POST" onsubmit="return checkAddbookForm(this);">
+    <input name="bookname" placeholder="Bookname" type="text" id="bookname">
+    <br><span id="bookchecker"></span><br><br>
+
+    <input name="author" placeholder="Auhtor"  id="auhtor">
+    <br><span id="auhtorchecker"></span><br><br>
+            
+    <input name="year" placeholder="Publication year" id="year" >
+    <br><span id="yearchecker"></span><br><br>
+            
+    <input name="numberofbooks" type="Number of copies" placeholder="numberofbooks "  id="numberofbooks">
+    <br><span id="numberofbookschecker"></span><br><br>
+
+    <button type="submit" name="submit" id="submit">Save Book</button>
+</form>
+            

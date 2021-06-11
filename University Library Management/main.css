@@ -1,0 +1,439 @@
+body
+{
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(34, 31, 31);
+}
+
+.navbar
+{
+    background-color: dimgrey;
+    --border-bottom-left-radius: 7%;
+    --border-bottom-right-radius: 7%;    
+}
+
+
+.user
+{
+    width: 200px;
+}
+.navbar .user .pic img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.droplist
+{
+  display: none;
+  position: absolute;
+  background-color: dimgray;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: none;
+  z-index: 1;
+}
+
+.droplist a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: thick;
+}
+
+.newDropList
+{
+    display: block;
+}
+
+
+.show 
+{
+    display: block;
+}
+
+.user .name
+{
+    position: absolute;
+    left:57;
+    top:20;
+    font-weight: bold;
+    color: white;
+}
+
+.welcome
+{
+    position: absolute;
+    right: 43%;
+    top:20;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image img
+{
+    margin-bottom: 30px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: middle;
+
+}
+
+#input2nd
+{
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+}
+
+ul{
+    padding-top: 100px;
+    padding-left: 0px;
+    margin:0;
+    list-style-type: none;
+    background-color: rgb(39, 38, 38);
+    width: 25%;
+    height: 100%;
+    border-right: solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.adminMenu input
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    color: white;
+    width: 99%;
+    height: 50px;
+}
+
+.adminMenu input:focus
+{
+    border-color: black;
+    background-color:black;
+}
+
+#menu button
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    width: 200px;
+    height: 30px;
+    color: white;
+    border-radius: 0px;
+}
+
+#browser button
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    height: 30px;
+    color: white;
+}
+
+#menu
+{
+    position: absolute;
+    margin-left: 25%;
+    top: 150;
+    left: 400;
+    color: white;
+    /*width: 75%;
+    height: 100%;
+    /*background-color: rgb(34, 31, 31);*/
+}
+
+#browser
+{
+    position: absolute;
+    margin-left: 25%;
+    top: 80;
+    left:50;
+    background-color: rgb(34, 31, 31);
+}
+
+.bId
+{
+    position: absolute;
+    margin-left: 25%;
+    top: 150;
+    left:50;
+    color: white;
+}
+
+.adminMenu button
+{
+    margin-top: 20;
+}
+
+#menu label
+{
+    border-bottom:1px solid white;
+    background:transparent;
+    font-size:16px;
+}
+
+#menu #UserProf input
+{
+    border:0;
+    border-bottom:1px solid white;
+    background:transparent;
+    font-size:16px;
+    position: absolute;
+    left: 170;
+}
+
+#UserProf .passE
+{
+    position: absolute;
+    left: 380;
+    width: auto;
+    box-shadow: none;
+}
+
+#UserProf button
+{
+    width: 150px;
+    margin-right: 65px
+}
+
+#menu input
+{
+    border:0;
+    border-bottom:1px solid white;
+    background:transparent;
+    font-size:16px;
+    color: white;
+}
+
+#menu input:focus{ 
+    border:none;	
+    outline:none;
+    background:transparent;
+    border-bottom:1px solid #a52a2a;	
+}
+
+#menu select{
+    width: 200px;
+    height: 30px;
+    border:0;
+    color:#fff;
+    border-bottom: 1px solid black;
+    background-color: rgb(90, 90, 90);
+}
+
+#menu select:focus{
+    border:none;	
+    outline:none;
+    background:transparent;
+    border-bottom:1px solid #a52a2a;
+}
+
+
+.editpass
+{
+    display: none;
+    padding-bottom: 18px
+}
+
+.passwordst
+{
+    margin-left:-60px;
+}
+
+.passwordnd
+{
+    margin-left: -85px;
+}
+
+.enEdit
+{
+    display: block;
+}
+
+#editInfo
+{
+    position: absolute;
+    left: 175;
+}
+
+#message
+{
+    position: absolute;
+    left: 175;
+}
+
+.close
+{
+    display: none;
+}
+
+.left-side
+{
+    width: 25%;
+    height: 100%;
+    background:  url(back.jpg);
+    background-size: 1550px;
+    filter: blur(6px);
+    border-right: solid;
+    border-color: white;
+}
+
+.right-side
+{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height:100%;
+    top:0;
+    background: url(back.jpg);
+    filter: blur(6px);
+    background-size: 1550px;
+    background-position: right;
+    border-left: solid;
+    border-color: white;
+}
+
+.edit
+{
+    position: absolute;
+    left: 42%;
+    top: 50;
+}
+
+.edit input
+{
+    border:0;
+    border-bottom:1px solid white;
+    background:transparent;
+    font-size:16px;
+    color: white;
+}
+
+.edit input:focus{ 
+    border:none;	
+    outline:none;
+    background:transparent;
+    border-bottom:1px solid #a52a2a;	
+}
+.edit .Sea
+{
+    margin-left: 35%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    height: 30px;
+    color: white;
+}
+
+.edit .Sub
+{
+    margin-left: 25%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    height: 30px;
+    color: white;
+}
+
+#editNd
+{
+    top:220;
+}
+
+
+#homediv{
+    text-align: center;
+    margin: 100px auto; 
+    width:450px;
+    height: 350px;
+    border-style: hidden;
+    background-color: rgba(49, 44, 44, 0.6);
+    border-radius: 8px;
+}
+
+#signdiv{
+    text-align: center;
+    margin: 100px auto; 
+    width:450px;
+    height: 425px;
+    border-style: hidden;
+    background-color: rgba(49, 44, 44, 0.6);
+    border-radius: 8px;
+}
+
+.homebody{
+    
+    background-image: url('13.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% ;
+    color: #f2f2f2;
+}
+
+.bu{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    width: 200px;
+    height: 30px;
+}
+
+#submit{
+    border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(90, 90, 90);
+    border-color: rgb(90, 90, 90);
+    width: 200px;
+    height: 30px;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    border:0;
+    color:#fff;
+    border-bottom: 1px solid black;
+    background:transparent;
+}
+
+select:focus{
+    border:none;	
+    outline:none;
+    background:transparent;
+    border-bottom:1px solid #a52a2a;
+}
+
+option{
+    background-color: black;
+}
+
+.navbar .logout
+{
+    background: transparent;
+    border: none;
+    width: 145;
+    text-align: left;
+    margin-left: 12;
+}
+
+
+span{
+    text-align: left;
+    border-style: hidden;
+    color: rgb(168, 18, 18);
+    font-size: 14px;
+}

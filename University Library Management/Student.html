@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>University Library</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="user" onclick="getprof()">
+                <a href="#">
+                    <div class="pic"><img src="DSC_0036.JPG"></div>
+                    <div id="dropList" class="dropList">
+                        <a href="#">update information</a><br>
+                        <a href="#">messages</a><br>
+                        <a href="#">log out</a>
+                    </div>
+                    <div class="name">ابراهيم الابيض</div>
+                </a>
+            </div>
+            <div class="welcome">Welcome to University Library</div>
+            <div class="search">
+                <form action="" method="POST">
+                    <input name="search" type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <?php
+                include 'Server.php';
+                $search='search';
+
+                $mysql="SELECT * FROM book
+                WHERE author='$search' or bookname='$search' or publicationyear='$search'";
+
+                $result = $connection -> query($mysql);
+                $row = $result -> fetch_assoc();
+
+
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo"BookName: " .$row["bookname"]." Author Name: ".$row["author"]. "Publication Year: ".$row["publicationyear"];
+                    }
+                } else {
+                     echo "0 results";
+                }
+                $connection->close();
+            ?>
+        </div>
+        <script src="Script.js"></script>
+    </body>   
+</html>
+

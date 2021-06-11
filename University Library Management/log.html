@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        input{ 
+            border:0;
+            border-bottom:1px solid black;
+            color:#fff;
+            background:transparent;
+            font-size:16px;
+            }
+        input:focus{ 
+            border:none;	
+            outline:none;
+            background:transparent;
+            border-bottom:1px solid #a52a2a;	
+        }
+        span{
+            text-align: left;
+            border-style: hidden;
+            color: rgb(168, 18, 18);
+            font-size: 12px;
+        }
+    </style>
+    <script >
+        function signvalidation(){
+            var email=document.form.email.value;
+            var password1=document.form.password.value;
+
+            var status=false;
+
+                if(email.length<1){
+                    document.getElementById("emailchecker").innerHTML="Enter valid email."
+                    status=false;
+                }
+                else{  
+                    status=true;  
+                    }  
+                if(password1.length<6){
+                    document.getElementById("passwordchecker1").innerHTML="Enter valid password."
+                    status=false;
+                }
+                return status;
+        }
+    </script>
+    <body class="homebody">
+        <div id="homediv">
+            <br>
+            <h2>Welcome to Cairo University Library</h2>
+            <form name="form" action="LoginUser.php" method="POST" onsubmit="return signvalidation()">
+                <br>
+                <input name="email" id="name" placeholder="email" type="email" autocomplete="onautocomplete"/>
+                <br>
+                <br>
+                <span id="emailchecker"></span>
+                <br>
+                <br>
+                <input type="password" name="password" id="pass" placeholder="Password"/>
+                <br>
+                <br>
+                <span id="passwordchecker1"></span>
+                <br>
+                <br>
+                <input type="submit" class="bu" value="Log in"/>
+            </form>
+        </div>
+    </body>
+</html>

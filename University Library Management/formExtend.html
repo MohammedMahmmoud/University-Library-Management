@@ -1,0 +1,20 @@
+<script src="Script.js">
+</script>
+<form id="Extend" action="Extendborrow.php" method="POST" name="form" onsubmit="return checkborrowForm(this);">
+    
+    <input type="txt" placeholder="Book name" name="bookname">
+    <br><span id="bookchecker"></span><br><br>
+
+    <input type="txt" placeholder="Author name" name="author">
+    <br><span id="auhtorchecker"></span><br><br>
+
+    <select name="day" id="day">
+        <option value="7">7</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="15">15</option>
+    </select>   <br><br>
+    
+    <button type="submit" name="ExtendSubmit" id="submit">Submit</button>
+
+</form>

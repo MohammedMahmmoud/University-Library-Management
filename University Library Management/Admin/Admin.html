@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>University Library</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <div class="user" onclick="getprof()">
+                <a href="#">
+                    <div class="pic"><img src="DSC_0036.JPG"></div>
+                    <div id="dropList" class="dropList">
+                        <a href="#" onclick="getEdit()">update information</a><br>
+                        <a href="#" onclick="getMess()">messages</a><br>
+                        <a href=".html">log out</a>
+                    </div>
+                    <div class="name">ابراهيم الابيض</div>
+                </a>
+            </div>
+            <div class="welcome">Welcome to University Library</div>
+            <div class="search">
+                <form action="BrowsingBooks.php" method="POST">
+                    <input name="search" type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form></div>
+        </div>
+        <div id="editInfo"></div>
+        <div id="message"></div>
+        <script src="Script.js"></script>
+        <?php include "main.php";?>
+    </body>
+    
+</html>
+

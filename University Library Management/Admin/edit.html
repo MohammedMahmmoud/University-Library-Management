@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>update information</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <center>
+            <div class=image><img src="DSC_0036.JPG"></div>
+            <label class="username">User name</label>
+            <input type="text" id="input" disabled > 
+            <button class="userbt" onclick="editName()">edit</button><br>
+            
+            <label id="password">Password</label>
+            <input type="password" id="input2nd" disabled >
+            <button class="userbt" onclick="editPass()">edit</button><br>
+            
+            <div class="editpass" id="edit">
+                <label class="passwordst">new password</label>
+                <input type="password" class="Einputst"><br><br>
+                <label class="passwordnd">confirm password</label>
+                <input type="password" class="Einputnd" >
+            </div>
+            
+            <input type="submit" class="bu1" value="save edit">
+            <input type="submit" class="bu1" value="cancel"><br>
+            <input type="submit" class="bu" value="delete my account"/>
+        </center>
+        
+        <script src="Script.js"></script>
+    </body>
+</html>

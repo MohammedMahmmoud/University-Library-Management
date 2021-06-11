@@ -1,0 +1,59 @@
+<html>
+    <head>
+    <title>web project</title>
+    </head>
+    <body>
+    <div>
+      <form>
+         <input type="button" onclick="AboutFunction1();" value="Borrow Book"><br><br>
+         
+         <input type="button" onclick="AboutFunction2();" value="Return Book"><br><br>
+         
+         <input type="button" onclick="AboutFunction3();" value="Extend borrowing Book">
+      </form>
+    </div>
+    <div id="menu"></div>
+    
+<script>
+
+
+function AboutFunction2()
+            {
+                var xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function() {
+                if (this.readyState==4 && this.status==200) {
+                document.getElementById("menu").innerHTML=this.responseText;
+                }
+                };
+                xhttp.open("GET","formReturn.html",true);
+                xhttp.send();
+            }
+            
+function AboutFunction1()
+            {
+                var xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function() {
+                if (this.readyState==4 && this.status==200) {
+                document.getElementById("menu").innerHTML=this.responseText;
+                }
+                };
+                xhttp.open("GET","formBorrow.html",true);
+                xhttp.send();
+            }
+function AboutFunction3()
+            {
+                var xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function() {
+                if (this.readyState==4 && this.status==200) {
+                document.getElementById("menu").innerHTML=this.responseText;
+                }
+                };
+                xhttp.open("GET","formExtend.html",true);
+                xhttp.send();
+            }
+
+</script>   
+        
+ </body>
+
+</html>

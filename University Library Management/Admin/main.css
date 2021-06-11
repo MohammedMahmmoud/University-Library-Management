@@ -1,0 +1,147 @@
+body
+{
+    margin: 0;
+}
+.navbar
+{
+    background-color: dimgrey;
+    --border-bottom-left-radius: 7%;
+    --border-bottom-right-radius: 7%;    
+}
+.user
+{
+    width: 200px;
+}
+.navbar .user .pic img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.droplist
+{
+  display: none;
+  position: absolute;
+  background-color: dimgray;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: none;
+  z-index: 1;
+}
+
+.droplist a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: thick;
+}
+
+.newDropList
+{
+    display: block;
+}
+
+.show 
+{
+    display: block;
+}
+
+.user .name
+{
+    position: absolute;
+    left:57;
+    top:20;
+    font-weight: bold;
+    color: white;
+}
+
+.welcome
+{
+    position: absolute;
+    right: 43%;
+    top:20;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.search
+{
+    position: absolute;
+    right: 0;
+    top: 15;
+}
+
+.search input
+{
+    width: 250;
+    height: 30;
+    border: none;
+}
+.search i
+{    
+    height: 30;
+    border: none;
+    margin-bottom: -10;
+    margin-top:5;
+}
+
+
+
+
+
+.image img
+{
+    margin-bottom: 30px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: middle;
+
+}
+
+#input2nd
+{
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+}
+
+.editpass
+{
+    display: none;
+    padding-bottom: 18px
+}
+
+.passwordst
+{
+    margin-left:-60px;
+}
+
+.passwordnd
+{
+    margin-left: -85px;
+}
+
+.enEdit
+{
+    display: block;
+}
+
+#editInfo
+{
+    position: absolute;
+    left: 175;
+}
+
+#message
+{
+    position: absolute;
+    left: 175;
+}
+

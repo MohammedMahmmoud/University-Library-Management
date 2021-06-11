@@ -1,0 +1,30 @@
+g<html>
+    <head>
+        <title>edit book</title>
+    </head>
+    <body>
+        <form action="editbook.php" method="POST" class="editNd">
+            <label>book name</label>
+            <input type="text" id="bookid" value="test" name="bookname" disabled>
+            <button type="button" onclick="editbookName()">edit</button><br>
+            
+            <label>book author</label>
+            <input type="text" id="authorid" name="author" disabled>
+            <button type="button" onclick="editauthor()">edit</button><br>
+            
+            <label>Release year</label>
+            <input type="text" id="yearid" name="year" disabled>
+            <button type="button" onclick="editbookYear()">edit</button><br>
+            
+            <label>number of Copies</label>
+            <input type="text" id="copyid" name="copies" disabled>
+            <button type="button" onclick="editcopy()">edit</button><br>
+            
+            <button>save edit</button>
+            <button onclick="closeEdit()">cancel edit</button><br>
+            
+            <button>delete book</button>
+        </form>
+        <script src="Script.js"></script>
+    </body>
+</html>
